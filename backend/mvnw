@@ -1,0 +1,23 @@
+#!/bin/sh
+# Maven wrapper script
+
+if [ -n "$JAVA_HOME" ] ; then
+    JAVACMD="$JAVA_HOME/bin/java"
+else
+    JAVACMD="java"
+fi
+
+if [ ! -x "$JAVACMD" ] ; then
+    echo "Error: JAVA_HOME is not defined correctly." >&2
+    exit 1
+fi
+
+# Download maven if not present
+if [ ! -f "$HOME/.m2/wrapper/maven-wrapper.jar" ]; then
+    mkdir -p "$HOME/.m2/wrapper"
+    wget -O "$HOME/.m2/wrapper/maven-wrapper.jar" https://repo.maven.apache.org/maven2/org/apache/maven/wrapper/maven-wrapper/3.1.0/maven-wrapper-3.1.0.jar
+fi
+
+exec "$JAVACMD" \
+  -classpath "$HOME/.m2/wrapper/maven-wrapper.jar" \
+  org.apache.maven.wrapper.MavenWrapperMain "$@"
