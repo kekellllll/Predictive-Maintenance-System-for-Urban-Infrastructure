@@ -46,10 +46,12 @@
         </dependency>
 
         <!-- Spring Cloud Gateway -->
+        <!-- Commented out as it conflicts with Spring MVC for this demo
         <dependency>
             <groupId>org.springframework.cloud</groupId>
             <artifactId>spring-cloud-starter-gateway</artifactId>
         </dependency>
+        -->
 
         <!-- JWT -->
         <dependency>

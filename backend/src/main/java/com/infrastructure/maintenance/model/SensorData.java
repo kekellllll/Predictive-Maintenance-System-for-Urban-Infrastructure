@@ -21,12 +21,13 @@ public class SensorData {
     private String sensorType; // TEMPERATURE, VIBRATION, PRESSURE, HUMIDITY, STRAIN, etc.
 
     @NotNull
+    @Column(name = "sensor_value")
     private Double value;
 
     private String unit;
 
     @NotNull
-    @Column(name = "timestamp")
+    @Column(name = "sensor_timestamp")
     private LocalDateTime timestamp;
 
     @ManyToOne(fetch = FetchType.LAZY)
