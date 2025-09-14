@@ -1,0 +1,72 @@
+# Backend (Java/Maven)
+backend/target/
+backend/.mvn/
+backend/mvnw.cmd
+backend/*.iml
+backend/*.log
+
+# Frontend (Node.js)
+frontend/node_modules/
+frontend/build/
+frontend/dist/
+frontend/.env.local
+frontend/.env.development.local
+frontend/.env.test.local
+frontend/.env.production.local
+frontend/npm-debug.log*
+frontend/yarn-debug.log*
+frontend/yarn-error.log*
+
+# ML Engine (Python)
+ml-engine/__pycache__/
+ml-engine/*.pyc
+ml-engine/*.pyo
+ml-engine/*.pyd
+ml-engine/.Python
+ml-engine/env/
+ml-engine/venv/
+ml-engine/.venv/
+ml-engine/saved_models/
+ml-engine/*.egg-info/
+ml-engine/.pytest_cache/
+
+# Docker
+.docker/
+
+# IDE
+.idea/
+.vscode/
+*.swp
+*.swo
+*~
+
+# OS
+.DS_Store
+Thumbs.db
+
+# Logs
+*.log
+logs/
+
+# Runtime data
+pids/
+*.pid
+*.seed
+*.pid.lock
+
+# Dependency directories
+node_modules/
+
+# Optional npm cache directory
+.npm
+
+# Temporary folders
+tmp/
+temp/
+
+# Environment variables
+.env
+.env.local
+.env.development.local
+.env.test.local
+.env.production.local
